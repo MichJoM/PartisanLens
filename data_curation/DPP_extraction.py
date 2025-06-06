@@ -46,9 +46,7 @@ def generate_shots(dpp_hp, dpp_non_hp, num_samples, df, df_fake,df_true):
 DATA = "FakeNewsCorpusSpanish"
 ###VARIABLES
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
-#model = SentenceTransformer("akhooli/Arabic-SBERT-100K") ###   
 model = SentenceTransformer("embaas/sentence-transformers-multilingual-e5-large")
-#model = SentenceTransformer("embaas/sentence-transformers-e5-large-v2")
 
 ###DATASET PROCESSING
 df = pd.read_csv(os.path.join(os.path.expanduser('~/datasets/subdatasets'), DATA+'.csv'))
