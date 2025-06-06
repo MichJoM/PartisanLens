@@ -1,8 +1,9 @@
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-import matplotlib.ticker as mticker
 import os
+
+import matplotlib.pyplot as plt
+import matplotlib.ticker as mticker
+import pandas as pd
+import seaborn as sns
 
 # Load the dataframe.
 df_mc_all = pd.read_csv("MC_ALL.csv")

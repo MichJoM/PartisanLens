@@ -1,11 +1,12 @@
-import pandas as pd
-import numpy as np
-import os
-from pydpp.dpp import DPP
-from sklearn.model_selection import train_test_split
-import torch
-from sentence_transformers import SentenceTransformer
 import json
+import os
+
+import pandas as pd
+import torch
+from pydpp.dpp import DPP
+from sentence_transformers import SentenceTransformer
+from sklearn.model_selection import train_test_split
+
 
 ###FUNCTIONS
 

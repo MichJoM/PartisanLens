@@ -1,9 +1,11 @@
 import os
-import pandas as pd
+
 import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
 import seaborn as sns
 from scipy.stats import chi2_contingency
-import numpy as np
+
 
 def load_and_analyze_csvs(path_to_dir, suffix="_merged.csv"):
     filenames = [os.path.join(path_to_dir, filename) 
