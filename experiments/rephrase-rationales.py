@@ -45,7 +45,7 @@ Generate a step-by-step explanation that supports the given labels."""
 def parse_arguments():
     parser = argparse.ArgumentParser(description="Run LLM inference on a dataset.")
     parser.add_argument("--dataset", type=str, required=True, help="Path to the dataset (CSV/TSV)")
-    parser.add_argument("--output", type=str, default="rephrased-rationales.tsv", help="Output file path")
+    parser.add_argument("--output", type=str, default="rephrased-rationales.csv", help="Output file path")
     parser.add_argument("--hf_token", type=str, default=None, help="Hugging Face token for model access")
     return parser.parse_args()
 
@@ -162,7 +162,7 @@ def main():
         batch_df = pd.DataFrame(all_results)
         batch_df.to_csv(
             output_file,
-            sep="\t",
+            sep=",",
             index=False,
             mode="a" if file_exists else "w",  # Append mode if file exists
             header=not file_exists  # Only write header if file is new

@@ -37,7 +37,7 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description="Run LLM inference on a dataset.")
     parser.add_argument("--dataset", type=str, required=True, help="Path to the dataset (CSV/TSV)")
     parser.add_argument("--model", type=str, required=True, help="Model to use", choices=model_mapping.keys())
-    parser.add_argument("--output", type=str, default="rephrased-rationales.tsv", help="Output file path")
+    parser.add_argument("--output", type=str, default="rephrased-rationales.csv", help="Output file path")
     parser.add_argument("--mode", type=str, default="rationales", choices=["labels", "rationales"], help="Mode of operation: 'rationales' or 'labels'")
     parser.add_argument("--hf_token", type=str, default=None, help="Hugging Face token for model access")
     return parser.parse_args()
@@ -54,7 +54,7 @@ def main():
     sentences = df['text'].to_list()
 
     messages = []
-    few_shot_examples = pd.read_csv(f"../data/few_shot_examples.csv")
+    few_shot_examples = pd.read_csv(f"few_shot_examples.csv")
     few_shot = build_few_shots(few_shot_examples)
 
     for sentence in sentences:

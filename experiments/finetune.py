@@ -38,7 +38,7 @@ def parse_arguments():
     parser = argparse.ArgumentParser(description="Run LLM fine-tuning on a dataset.")
     parser.add_argument("--dataset", type=str, required=True, help="Path to the dataset (CSV/TSV)")
     parser.add_argument("--model", type=str, required=True, help="Model to use", choices=model_mapping.keys())
-    parser.add_argument("--new_model_name", type=str, default="new_model.tsv", help="Name of the new fine-tuned model.")
+    parser.add_argument("--new_model_name", type=str, default="new_model", help="Name of the new fine-tuned model.")
     parser.add_argument("--mode", type=str, default="rationales", choices=["labels", "rationales"], help="Mode of operation: 'rationales' or 'labels'")
     parser.add_argument("--hf_token", type=str, default=None, help="Hugging Face token for model access")
     return parser.parse_args()
