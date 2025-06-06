@@ -18,7 +18,7 @@ def load_and_analyze_csvs(path_to_dir, suffix="_merged.csv"):
     return df_total
 
 # Load data
-data = load_and_analyze_csvs('/home/michele/Documenti/HYBRIDS/Experiment/Dataset_creation_MC/Final_dataset/data')
+data = load_and_analyze_csvs('/data')
 data.to_csv('MC_ALL.csv')
 
 # Basic stats
