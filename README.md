@@ -167,9 +167,7 @@ If you use this resource, please ⭐ star the repo and stay tuned for citation i
 
 
 
-## 📬 Contact
 
-For questions, please reach out via email: `michelejoshua.maggini@usc.es` or `paloma.piot@udc.es`
 
 
 
