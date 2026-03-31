@@ -160,7 +160,31 @@ Full documentation of tasks, labeling protocols, and rationale-writing instructi
 
 ## 📝 Citation
 
-📌 *Coming soon – paper under submission.*  
+📌 @inproceedings{maggini-etal-2026-partisanlens,
+    title = "{P}artisan{L}ens: A Multilingual Dataset of Hyperpartisan and Conspiratorial Immigration Narratives in {E}uropean Media",
+    author = "Maggini, Michele Joshua  and
+      Piot, Paloma  and
+      P{\'e}rez, Anxo  and
+      Marino, Erik Bran  and
+      Montesinos, L{\'u}a Santamar{\'i}a  and
+      Cotovio, Ana Lisboa  and
+      Abu{\'i}n, Marta V{\'a}zquez  and
+      Parapar, Javier  and
+      Gamallo, Pablo",
+    editor = "Demberg, Vera  and
+      Inui, Kentaro  and
+      Marquez, Llu{\'i}s",
+    booktitle = "Proceedings of the 19th Conference of the {E}uropean Chapter of the {A}ssociation for {C}omputational {L}inguistics (Volume 1: Long Papers)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.eacl-long.53/",
+    doi = "10.18653/v1/2026.eacl-long.53",
+    pages = "1171--1186",
+    ISBN = "979-8-89176-380-7",
+    abstract = "Detecting hyperpartisan narratives and Population Replacement Conspiracy Theories (PRCT) is essential to addressing the spread of misinformation. These complex narratives pose a significant threat, as hyperpartisanship drives political polarisation and institutional distrust, while PRCTs directly motivate real-world extremist violence, making their identification critical for social cohesion and public safety. However, existing resources are scarce, predominantly English-centric, and often analyse hyperpartisanship, stance, and rhetorical bias in isolation rather than as interrelated aspects of political discourse. To bridge this gap, we introduce PartisanLens, the first multilingual dataset of 1617 hyperpartisan news headlines in Spanish, Italian, and Portuguese, annotated in multiple political discourse aspects. We first evaluate the classification performance of widely used Large Language Models (LLMs) on this dataset, establishing robust baselines for the classification of hyperpartisan and PRCT narratives. In addition, we assess the viability of using LLMs as automatic annotators for this task, analysing their ability to approximate human annotation. Results highlight both their potential and current limitations. Next, moving beyond standard judgments, we explore whether LLMs can emulate human annotation patterns by conditioning them on socio-economic and ideological profiles that simulate annotator perspectives. At last, we provide our resources and evaluation; PartisanLens supports future research on detecting partisan and conspiratorial narratives in European contexts."
+}  
 If you use this resource, please ⭐ star the repo and stay tuned for citation info.
 
 ---
